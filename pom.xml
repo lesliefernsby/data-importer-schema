@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lesliefernsby.dataimporter</groupId>
+    <artifactId>data-importer-schema</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>Data Importer Schema</name>
+    <description>This project generates schemas from openapi 3 specifications</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <jsonschema2pojo.version>1.1.1</jsonschema2pojo.version>
+    </properties>
+
+    <dependencies>
+        <!-- fasterxml.jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.8</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                <version>${jsonschema2pojo.version}</version>
+                <configuration>
+                    <sourceDirectory>${project.basedir}/src/main/resources/schema</sourceDirectory>
+                    <targetPackage>com.lesliefernsby.dataimporter.schema</targetPackage>
+                    <generateBuilders>true</generateBuilders>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

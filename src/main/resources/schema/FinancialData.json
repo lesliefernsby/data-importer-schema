@@ -1,0 +1,344 @@
+{
+  "type": "object",
+  "properties": {
+    "financialData": {
+      "type": "object",
+      "properties": {
+        "maxAge": {
+          "type": "integer"
+        },
+        "currentPrice": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "targetHighPrice": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "targetLowPrice": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "targetMeanPrice": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "targetMedianPrice": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string",
+              "format": "utc-millisec"
+            }
+          }
+        },
+        "recommendationMean": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string",
+              "format": "utc-millisec"
+            }
+          }
+        },
+        "recommendationKey": {
+          "type": "string"
+        },
+        "numberOfAnalystOpinions": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string",
+              "format": "utc-millisec"
+            },
+            "longFmt": {
+              "type": "string",
+              "format": "utc-millisec"
+            }
+          }
+        },
+        "totalCash": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "totalCashPerShare": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "ebitda": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "totalDebt": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "quickRatio": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "currentRatio": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "totalRevenue": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "debtToEquity": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "revenuePerShare": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "returnOnAssets": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "returnOnEquity": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "grossProfits": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "freeCashflow": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "operatingCashflow": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer"
+            },
+            "fmt": {
+              "type": "string"
+            },
+            "longFmt": {
+              "type": "string"
+            }
+          }
+        },
+        "earningsGrowth": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "revenueGrowth": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "grossMargins": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "ebitdaMargins": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "operatingMargins": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "profitMargins": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "number"
+            },
+            "fmt": {
+              "type": "string"
+            }
+          }
+        },
+        "financialCurrency": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
